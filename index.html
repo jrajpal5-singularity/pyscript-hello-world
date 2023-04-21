@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <title>Writing to the page</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+</head>
+
+<body>
+    <h2>hi my name is jimmy</h2>
+    <h1> Plotting a graph </h1>
+    <div id="lineplot"> </div> 
+    
+    <py-config>
+        packages = ["matplotlib"]
+    </py-config>
+    <py-script src="/hello_world.py"/>
+    <!-- <py-script>
+import matplotlib.pyplot as plt
+
+fig, ax = plt.subplots()
+
+year_2 = [2016, 2017, 2018, 2019, 2020, 2021]
+population_2 = [43, 43, 44, 44, 45, 45]
+
+plt.plot(year_2, population_2)
+
+
+pyscript.write('lineplot',fig)
+
+print('Python script in pyscript end here ')
+                    
+    </py-script> -->
+</body>
+
+</html>
